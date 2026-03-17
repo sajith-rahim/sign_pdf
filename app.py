@@ -167,6 +167,10 @@ class SignPdfApp(QMainWindow):
         self.btn_choose_save_loc.clicked.connect(self.choose_save_location)
         self.save_loc_label = QLabel("Save Location: Not selected")
         self.save_loc_label.setWordWrap(True)
+
+        self.info = QLabel("For Legal/Official use, you should use a certificate from a trusted Certificate Authority (CA)")
+        self.info.setWordWrap(True)
+        self.info.setAlignment(Qt.AlignmentFlag.AlignLeft)
         
         self.btn_create_cert = QPushButton("CREATE CERTIFICATE")
         self.btn_create_cert.clicked.connect(self.create_certificate)
@@ -178,6 +182,7 @@ class SignPdfApp(QMainWindow):
         layout.addWidget(self.create_password_input)
         layout.addSpacing(10)
         layout.addStretch()
+        layout.addWidget(self.info)
         layout.addWidget(self.btn_choose_save_loc)
         layout.addWidget(self.save_loc_label)
         layout.addSpacing(10)
