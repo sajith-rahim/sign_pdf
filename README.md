@@ -22,6 +22,9 @@ pip install -r requirements.txt
 ```
 
 ## Creating a Test Certificate
+
+> For Legal/Official use, you should use a certificate from a trusted Certificate Authority (CA).
+
 If you do not have a digital certificate, you can generate a free, self-signed certificate for testing purposes.
 
 ### Option A: Windows (PowerShell)
